@@ -1,0 +1,10 @@
+
+o Allow "*" or :* as an exclude/DUMP_EXCLUDE argument that wipes the inherited
+  list of attributes. Then remove DUMP_NEW
+o Allow multi-level attribute lists: ":a, { b: [:c] }, :d"
+o Have class included in a: { sub: { subsub: { ... } }:
+    a: (Klass)
+      a: (SubKlass)
+        a: (SubSubKlass)
+o Consider switching to using StringIO everywhere. Can cost a lot of
+  performance but simplifies the implementation

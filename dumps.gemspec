@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require_relative "lib/dump/version"
+require_relative "lib/dumps/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "dump"
-  spec.version = Dump::VERSION
+  spec.name = "dumps"
+  spec.version = Dumps::VERSION
   spec.authors = ["Claus Rasmussen"]
   spec.email = ["claus.l.rasmussen@gmail.com"]
 
-  spec.summary = "Gem dump"
-  spec.description = "Gem dump"
+  spec.summary = "Gem dumps"
+  spec.description = "Gem dumps"
   spec.homepage = "http://www.nowhere.com/"
   spec.required_ruby_version = ">= 2.6.0"
 
@@ -30,17 +30,18 @@ Gem::Specification.new do |spec|
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
 
-  spec.add_dependency "indented_io"
-
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
 
   # Add your production dependencies here
   # spec.add_dependency GEM [, VERSION]
 
+  spec.add_dependency "indented_io"
+  spec.add_dependency "constrain"
+
   # Add your development dependencies here
   # spec.add_development_dependency GEM [, VERSION]
 
   # Also un-comment in spec/spec_helper to use simplecov
-  # spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "simplecov"
 end

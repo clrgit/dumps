@@ -1,9 +1,9 @@
-#require 'simplecov'
-#SimpleCov.start
+require 'simplecov'
+SimpleCov.start
 
 # frozen_string_literal: true
 
-require "dump"
+require "dumps"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
