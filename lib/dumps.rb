@@ -20,7 +20,7 @@ module Dumps
   def self.timezone? = @@timezone
 
   # The eponymic method of the Dumps module. It is actually just a method for
-  # the lazy developer in the tcase where dumps should be seperated by a blank
+  # the lazy developer in the case where dumps should be separated by a blank
   # line to enhance readability
   def self.dumps(...) dump(...); puts end
 
